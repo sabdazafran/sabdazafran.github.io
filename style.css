@@ -1,0 +1,69 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+  font-size: 1.2rem;
+}
+
+.nav-link {
+  color: #198754;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.nav-link:hover {
+  background-color: #e9f5ee;
+  border-radius: 8px;
+}
+
+.nav-link.active {
+  background-color: #198754;
+  color: white !important;
+  border-radius: 8px;
+}
+
+.content-section {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+#chartProduksi {
+  height: 400px;
+}
+
+#map {
+  height: 500px;
+}
+
+.navbar-brand:hover {
+  color: #d4d4d4e1 !important;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+#carouselKebun img {
+  height: 400px; /* atur tinggi sesuai kebutuhan, misalnya 400px */
+  width: 100%;
+  object-fit: cover; /* jaga proporsi, crop sedikit agar pas */
+  border-radius: 10px;
+}
+
+/* opsional: agar carousel terlihat lebih elegan */
+#carouselKebun {
+  overflow: hidden;
+}
+
+#carouselKebun .carousel-item {
+  transition: transform 0.5s ease-in-out;
+} 
+#carouselKebun .carousel-control-prev,
+#carouselKebun .carousel-control-next {
+  filter: invert(1);
+}
+
+
