@@ -125,81 +125,87 @@
 <div id="contentKesesuaian" class="content-section col-md-9 col-lg-10 d-none">
   <h4 class="fw-bold mb-3 text-success">Peta Kesesuaian Lahan Penanaman Rumput Gajah</h4>
 
-  <!-- Gunakan flex agar peta dan legenda berdampingan -->
-  <div class="d-flex flex-wrap">
-    
+  <div class="row g-3">
+
     <!-- Peta -->
-    <div class="flex-grow-1" style="min-width: 65%; height: 500px; border-radius: 10px; overflow: hidden;">
-      <iframe 
-          src="web2qgis\Peta Kesesuaian Lahan Bunihayu\kesesuaian.html" 
-          style="width:100%; height:100%; border:none; border-radius:15px;">
-      </iframe>
+    <div class="col-lg-8 col-12 d-flex">
+      <div class="border rounded overflow-hidden w-100 h-100" style="height: 500px;">
+        <iframe 
+          src="web2qgis\Peta Kesesuaian Lahan Bunihayu\kesesuaian.html"
+          class="w-100 h-100 border-0 rounded">
+        </iframe>
+      </div>
     </div>
 
     <!-- Legenda -->
-    <div class="ms-3 mt-3 mt-md-0 p-3 bg-light border rounded shadow-sm" style="width: 30%; max-height: 500px; overflow-y: auto;">
-      <h6 class="fw-bold mb-3 text-center">Kesesuaian Lahan Pertumbuhan Rumput Gajah</h6>
+    <div class="col-lg-4 col-12 d-flex flex-column">
+      <div class="p-3 bg-light border rounded shadow-sm overflow-auto w-100" style="height: 500px;">
 
-      <!-- S1 -->
-      <div class="mb-2">
-        <div class="d-flex align-items-center mb-1">
-          <div style="width: 25px; height: 25px; background-color: #1a9641; border-radius: 4px; margin-right: 10px;"></div>
-          <span><b>S1 – Sangat Sesuai</b></span>
-        </div>
-        <ul class="mb-2" style="font-size: 0.9rem;">
-          <li>pH: 6.0 – 7.0</li>
-          <li>C-Organik: > 2.5%</li>
-          <li>N: > 0.25%</li>
-          <li>P₂O₅: > 25 ppm</li>
-          <li>K: > 25 ppm</li>
-        </ul>
-      </div>
+        <h6 class="fw-bold mb-3 text-center">Kesesuaian Lahan Pertumbuhan Rumput Gajah</h6>
 
-      <!-- S2 -->
-      <div class="mb-2">
-        <div class="d-flex align-items-center mb-1">
-          <div style="width: 25px; height: 25px; background-color: #f2f536; border-radius: 4px; margin-right: 10px;"></div>
-          <span><b>S2 – Cukup Sesuai</b></span>
+        <!-- S1 -->
+        <div class="mb-3">
+          <div class="d-flex align-items-center mb-1">
+            <div style="width: 25px; height: 25px; background-color: #1a9641; border-radius: 4px; margin-right: 10px;"></div>
+            <span><b>S1 – Sangat Sesuai</b></span>
+          </div>
+          <ul class="small mb-2">
+            <li>pH: 6.0 – 7.0</li>
+            <li>C-Organik: > 2.5%</li>
+            <li>N: > 0.25%</li>
+            <li>P₂O₅: > 25 ppm</li>
+            <li>K: > 25 ppm</li>
+          </ul>
         </div>
-        <ul class="mb-2" style="font-size: 0.9rem;">
-          <li>pH: 5.5 – 5.9 atau 7.1 – 7.5</li>
-          <li>C-Organik: 1.5 – 2.5%</li>
-          <li>N: 0.20 – 0.25%</li>
-          <li>P₂O₅: 15 – 25 ppm</li>
-          <li>K: 15 – 25 ppm</li>
-        </ul>
-      </div>
 
-      <!-- S3 -->
-      <div class="mb-2">
-        <div class="d-flex align-items-center mb-1">
-          <div style="width: 25px; height: 25px; background-color: #fd8f22; border-radius: 4px; margin-right: 10px;"></div>
-          <span><b>S3 – Sesuai Marginal</b></span>
+        <!-- S2 -->
+        <div class="mb-3">
+          <div class="d-flex align-items-center mb-1">
+            <div style="width: 25px; height: 25px; background-color: #f2f536; border-radius: 4px; margin-right: 10px;"></div>
+            <span><b>S2 – Cukup Sesuai</b></span>
+          </div>
+          <ul class="small mb-2">
+            <li>pH: 5.5 – 5.9 atau 7.1 – 7.5</li>
+            <li>C-Organik: 1.5 – 2.5%</li>
+            <li>N: 0.20 – 0.25%</li>
+            <li>P₂O₅: 15 – 25 ppm</li>
+            <li>K: 15 – 25 ppm</li>
+          </ul>
         </div>
-        <ul class="mb-2" style="font-size: 0.9rem;">
-          <li>pH: 5.0 – 5.4 atau 7.6 – 8.0</li>
-          <li>C-Organik: 1.0 – 1.4%</li>
-          <li>N: 0.10 – 0.19%</li>
-          <li>P₂O₅: 8 – 14 ppm</li>
-          <li>K: 10 - 15 ppm</li>
-        </ul>
-      </div>
 
-      <!-- N -->
-      <div>
-        <div class="d-flex align-items-center mb-1">
-          <div style="width: 25px; height: 25px; background-color: #d7191c; border-radius: 4px; margin-right: 10px;"></div>
-          <span><b>N – Tidak Sesuai</b></span>
+        <!-- S3 -->
+        <div class="mb-3">
+          <div class="d-flex align-items-center mb-1">
+            <div style="width: 25px; height: 25px; background-color: #fd8f22; border-radius: 4px; margin-right: 10px;"></div>
+            <span><b>S3 – Sesuai Marginal</b></span>
+          </div>
+          <ul class="small mb-2">
+            <li>pH: 5.0 – 5.4 atau 7.6 – 8.0</li>
+            <li>C-Organik: 1.0 – 1.4%</li>
+            <li>N: 0.10 – 0.19%</li>
+            <li>P₂O₅: 8 – 14 ppm</li>
+            <li>K: 10 - 15 ppm</li>
+          </ul>
         </div>
-        <ul style="font-size: 0.9rem;">
-          <li>pH: < 5.0 atau > 8.0</li>
-          <li>C-Organik: < 1.0%</li>
-          <li>N: < 0.10%</li>
-          <li>P₂O₅: < 8 ppm</li>
-          <li>K: < 10 ppm</li>
-        </ul>
+
+        <!-- N -->
+        <div>
+          <div class="d-flex align-items-center mb-1">
+            <div style="width: 25px; height: 25px; background-color: #d7191c; border-radius: 4px; margin-right: 10px;"></div>
+            <span><b>N – Tidak Sesuai</b></span>
+          </div>
+          <ul class="small">
+            <li>pH: < 5.0 atau > 8.0</li>
+            <li>C-Organik: < 1.0%</li>
+            <li>N: < 0.10%</li>
+            <li>P₂O₅: < 8 ppm</li>
+            <li>K: < 10 ppm</li>
+          </ul>
+        </div>
+
       </div>
     </div>
+
   </div>
 </div>
 
