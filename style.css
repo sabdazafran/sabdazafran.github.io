@@ -65,5 +65,18 @@ body {
 #carouselKebun .carousel-control-next {
   filter: invert(1);
 }
+ /* Default desktop */
+  .legend-box {
+    width: 30%;
+    max-height: 500px;
+    overflow-y: auto;
+  }
 
-
+  /* Mobile (≤ 768px) */
+  @media (max-width: 768px) {
+    .legend-box {
+      width: 100% !important; /* Full width on mobile */
+      margin-left: 0 !important; /* Hilangkan jarak pinggir kiri */
+      margin-top: 15px; /* Tambahkan sedikit jarak atas */
+    }
+  }
